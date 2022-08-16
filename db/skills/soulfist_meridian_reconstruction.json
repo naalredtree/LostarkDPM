@@ -1,0 +1,73 @@
+{
+  "class_name": "soulfist",
+  "policy": {
+    "mode": "fixed",
+    "main_cycle":[ 
+      ["내공방출"],
+      ["섬열파"],
+      ["난화격"],
+      ["기공장"],
+      ["여래신장"],
+      ["회선격추"],
+      ["섭물진기"],
+      ["운기조식 체크", "순보", "기공장"],
+      ["순보"]
+    ]
+  },
+  "skill_preset": [
+    {
+      "name": "운기조식 체크",
+      "default_damage": 0,
+      "default_coefficient": 0,
+      "base_damage_multiplier": 0,
+      "skill_type": "Common",
+      "identity_type": "Common",
+      "cooldown": 999999,
+      "common_delay": 0,
+      "type_specific_delay": 0,
+      "jewel_cooldown_level": 0,
+      "jewel_damage_level": 0,
+      "head_attack": false,
+      "back_attack": false,
+      "triggered_actions": ["modchk_if_meditation"],
+      "key_strokes" : 0,
+      "mana_cost": 0
+    },
+    {
+      "name": "페르소나 상태 진입",
+      "default_damage": 0,
+      "default_coefficient": 0,
+      "base_damage_multiplier": 0,
+      "skill_type": "Common",
+      "identity_type": "Common",
+      "cooldown": 999999,
+      "common_delay": 0.76,
+      "type_specific_delay": 0,
+      "jewel_cooldown_level": 0,
+      "jewel_damage_level": 0,
+      "head_attack": false,
+      "back_attack": false,
+      "triggered_actions": ["activate_persona"],
+      "key_strokes" : 1,
+      "mana_cost": 0
+    },
+    {
+      "name": "데몬 비전",
+      "default_damage": 3286,
+      "default_coefficient": 20.13,
+      "base_damage_multiplier": 1.586,
+      "skill_type": "Common",
+      "identity_type": "Intrude",
+      "cooldown": 24,
+      "common_delay": 1.86,
+      "type_specific_delay": 0,
+      "jewel_cooldown_level": 10,
+      "jewel_damage_level": 10,
+      "head_attack": false,
+      "back_attack": false,
+      "triggered_actions": [],
+      "key_strokes" : 1,
+      "rune": "None"
+    }
+  ]
+}

@@ -61,7 +61,7 @@ CLASS_BUFF_DICT = {
   'Synergy_2': {
     'name': 'synergy_1',
     'buff_type': 'stat',
-    'effect': 'synergy_1',
+    'effect': 'synergy_2',
     'duration': 12,
     'priority': 7,
   }
@@ -143,7 +143,7 @@ def time_to_hunt_3(character: CharacterLayer, skill: Skill, buff: Buff):
       s_acr = skill.get_attribute('additional_crit_rate')
       skill.update_attribute('additional_crit_rate', s_acr + 0.45)
      
-# 치적 시너지 (8초)
+# 치적 시너지
 def synergy_1(character: CharacterLayer, skill: Skill, buff: Buff):
     s_acr = skill.get_attribute('additional_crit_rate')
     skill.update_attribute('additional_crit_rate', s_acr + 0.10)

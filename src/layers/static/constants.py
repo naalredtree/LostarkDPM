@@ -74,6 +74,7 @@ ENGRAVINGS = {
   'Hit_Master_3': [('static_buff_queue', lambda x: x + ['Hit_Master_3'])],
   #속전속결
   'All_Out_Attack_3': [('static_buff_queue', lambda x: x + ['All_Out_Attack_3'])],
+  'All_Out_Attack_1': [('static_buff_queue', lambda x: x + ['All_Out_Attack_1'])],
   #슈퍼차지
   'Super_Charge_3': [('static_buff_queue', lambda x: x + ['Super_Charge_3'])],
 
@@ -100,7 +101,9 @@ ENGRAVINGS = {
   #충격단련
   'Shock_Training_3': [('static_buff_queue', lambda x: x + ['Shock_Training_3'])],
   #세맥타통
+  'Meridian_Reconstruction_1': [('static_buff_queue', lambda x: x + ['Meridian_Reconstruction_1'])],
   #역천지체
+  'Heaven_Defying_Body_3': [('static_buff_queue', lambda x: x + ['Heaven_Defying_Body_3'])],
   #절정
   #절제
   #일격필살
