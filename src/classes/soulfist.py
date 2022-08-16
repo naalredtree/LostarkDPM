@@ -17,9 +17,9 @@ from src.layers.static.constants import AWAKENING_DAMAGE_PER_SPECIALIZATION
 # 기본 금강선공 지속시간
 DEFAULT_HYPER3_TIME_LIMIT = 0
 DEFAULT_HYPER2_TIME_LIMIT = 0
-DEFAULT_Meditation_Time_Limit = 0
 
-# 세맥타통 2-3단계 변환 vals
+# 운기조식 시간
+DEFAULT_MEDITATION_TIME_LIMIT = 0
 
 # 금강선공 강화 특화 계수
 SPEC_COEF_1 = 1 / 11.6507 / 100
@@ -117,6 +117,31 @@ def modchk_if_meditation(buff_manager: BuffManager, skill_manager: SkillManager)
     if skill.get_attribute('name') == '페르소나 상태 진입':
       skill.update_attribute('remaining_cooldown', 0)
   skill_manager.apply_function(cooldown_reduction)
+  
+  
+  # Actions
+# 하이퍼 싱크 변신 사용 가능 전환
+def grant_hyper_sync(buff_manager: BuffManager, skill_manager: SkillManager):
+  def cooldown_reduction(skill: Skill):
+    if skill.get_attribute('name') == '하이퍼 싱크 변신':
+      skill.update_attribute('remaining_cooldown', 0)
+  skill_manager.apply_function(cooldown_reduction)
+
+# 하이퍼 싱크 사용
+def activate_hyper_sync(buff_manager: BuffManager, skill_manager: SkillManager):
+  buff_manager.register_buff(CLASS_BUFF_DICT['Hyper_Sync'], 'class')
+  if buff_manager.is_buff_exists('evolutionary_legacy_enabled_1'):
+    buff_manager.register_buff(CLASS_BUFF_DICT['Evolutionary_Legacy_1'], 'class')
+  def cooldown_reduction(skill: Skill):
+    if skill.get_attribute('name') == '하이퍼 싱크 변신해제':
+      skill.update_attribute('remaining_cooldown', 0)
+  skill_manager.apply_function(cooldown_reduction)
+
+# 변신 해제
+def deactivate_hyper_sync(buff_manager: BuffManager, skill_manager: SkillManager):
+  buff_manager.unregister_buff('hyper_sync')
+  buff_manager.unregister_buff('evolutionary_legacy')
+  buff_manager.unregister_buff('synergy_1')
   
 # 페르소나 사용
 def activate_persona(buff_manager: BuffManager, skill_manager: SkillManager):
