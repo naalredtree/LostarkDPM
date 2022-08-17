@@ -6,7 +6,7 @@
       "crit": 500,
       "specialization": 0,
       "swiftness": 1800,
-      "engravings": ["Grudge_3", "Raid_Captain_3", "Cursed_Doll_3", "Keen_Blunt_Weapon_3", "Adrenaline_3", "Meridian_Reconstruction_1"],
+      "engravings": ["Grudge_3", "Raid_Captain_3", "Cursed_Doll_3", "Keen_Blunt_Weapon_3", "Adrenaline_3", "Energy_Overflow_1"],
       "options": ["Synergy_Crit_A", "Synergy_Damage_A", "갈망_3"],
       "artifact_set": ["지배_6_3"],
       "skill_set": "./db/skills/soulfist_meridian_reconstruction.json"

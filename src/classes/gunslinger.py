@@ -148,6 +148,10 @@ def synergy_1(character: CharacterLayer, skill: Skill, buff: Buff):
     s_acr = skill.get_attribute('additional_crit_rate')
     skill.update_attribute('additional_crit_rate', s_acr + 0.10)
     
+def synergy_2(character: CharacterLayer, skill: Skill, buff: Buff):
+    s_acr = skill.get_attribute('additional_crit_rate')
+    skill.update_attribute('additional_crit_rate', s_acr + 0.10)
+    
 # 퀵 스텝 공이속 버프
 def speed_buff_1(character: CharacterLayer, skill: Skill, buff: Buff):
     c_ms = character.get_attribute('movement_speed')
