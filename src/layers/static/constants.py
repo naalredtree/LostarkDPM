@@ -119,6 +119,7 @@ ENGRAVINGS = {
   #두번째동료
   #죽음의습격
   #아르데타인의기술
+  "Arthetinean_Skill_1": [('static_buff_queue', lambda x: x + ['Arthetinean_Skill_1'])],
   #진화의유산
   "Evolutionary_Legacy_1": [('static_buff_queue', lambda x: x + ['Evolutionary_Legacy_Enabled_1'])],
   #사냥의시간
@@ -139,9 +140,10 @@ ENGRAVINGS = {
   #버스트
   'Burst_1': [('static_buff_queue', lambda x: x + ['Burst_Enabled_1'])],
   'Burst_3': [('static_buff_queue', lambda x: x + ['Burst_Enabled_3'])],
+  #완벽한억제
+  "Perfect_Suppression_1": [('static_buff_queue', lambda x: x + ['Perfect_Suppression_1'])],
   #멈출수없는충동
   "Demonic_Impulse_3": [('static_buff_queue', lambda x: x + ['Demonic_Impulse_3'])],
-  #완벽한억제
   #갈증
   "Hunger_3": [('static_buff_queue', lambda x: x + ['Hunger_3'])],
   #달의소리

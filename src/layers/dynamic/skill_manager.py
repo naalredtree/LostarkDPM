@@ -29,7 +29,7 @@ class SkillManager:
         # dummy skill
         self.dummy_skill = Skill('dummy', 0, 0, None, None, 0, 0, 0, False, False, list())
         # 룬 통계
-        self.rune_ratio = {'rg': [0,0], 'qr': [0,0]}
+        self.rune_ratio = {'rg': [0,0], 'qr': [0,0], 'jm' : [0,0]}
 
         print('##### Done Initialization of SkillsManager #####')
     
@@ -61,7 +61,7 @@ class SkillManager:
       if len(self.skill_queue) == 0:
         return (not self.is_blocked, False)
       target_name = self.skill_queue[0]
-      return (not self.is_blocked, bool(self.skill_pool[target_name].remaining_cooldown == 0))
+      return (not self.is_blocked, bool(self.skill_pool[target_name].remaining_cooldown <= 0))
 
     def get_next_skill(self) -> Skill:
         self._fetch_next_skills()

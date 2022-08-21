@@ -47,6 +47,7 @@ def json_parser(file_path):
 Factory for generating character
 """
 LEGEND_AVATAR_MULTIPLIER = 1.08
+DEFAULT_STAT_SUM = 2200
 class StatFactory:
   def __init__(self, upgrade=25, crit=0, specialization=0, swiftness=0, **kwargs):
     self.character_stat = dict()
@@ -54,6 +55,20 @@ class StatFactory:
     # stat and weapon_power from equipment
     self.character_stat['stat'] = (upgrade_table['armor'][upgrade] + upgrade_table['accessories'][upgrade]) * LEGEND_AVATAR_MULTIPLIER
     self.character_stat['weapon_power'] = upgrade_table['weapon'][upgrade]
+    if (crit + specialization + swiftness) != DEFAULT_STAT_SUM:
+      print('Wrong stat sum, check character json')
+    # default stats
+    crit += 50
+    specialization += 50
+    swiftness += 50
+    # pet applied, priority is spec > crit > swift
+    max_stat = max(crit, specialization, swiftness)
+    if max_stat == specialization:
+      specialization = specialization * 1.10
+    elif max_stat == crit:
+      crit = crit * 1.10
+    else:
+      swiftness = swiftness * 1.10
     self.character_stat['combat_stat'] = {
       'crit': crit,
       'specialization': specialization,
