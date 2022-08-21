@@ -6,13 +6,13 @@ from src.layers.utils import import_character
 
 if __name__ == '__main__':
     #character_path = './characters.json'
-    character_path = './db/characters/character_gunslinger_time_to_hunt.json'
+    character_path = './db/characters/character_soulfist_robust_spirit.json'
     character_configs = import_character(character_path)
 
     for character_config in character_configs:
       character_dict = character_config.build_dict()
       #simulator = DpmSimulator(character_dict, verbose=False)
-      simulator = DpmSimulator(character_dict, max_tick=300000, verbose=False)
+      simulator = DpmSimulator(character_dict, max_tick=300000, verbose=True)
       simulator.test()
       print('==========================')
       simulator.run_simulation()

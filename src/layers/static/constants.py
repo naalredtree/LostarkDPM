@@ -101,7 +101,7 @@ ENGRAVINGS = {
   #충격단련
   'Shock_Training_3': [('static_buff_queue', lambda x: x + ['Shock_Training_3'])],
   #세맥타통
-  'Energy_OVerflow_1': [('static_buff_queue', lambda x: x + ['Energy_Overflow_1'])],
+  'Energy_Overflow_1': [('static_buff_queue', lambda x: x + ['Energy_Overflow_1'])],
   #역천지체
   'Robust_Spirit_3': [('static_buff_queue', lambda x: x + ['Robust_Spirit_3'])],
   #절정

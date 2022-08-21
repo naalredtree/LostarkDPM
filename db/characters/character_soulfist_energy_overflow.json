@@ -3,9 +3,9 @@
     {
       "class_name": "soulfist",
       "upgrade": 25,
-      "crit": 500,
+      "crit": 600,
       "specialization": 0,
-      "swiftness": 1800,
+      "swiftness": 1600,
       "engravings": ["Grudge_3", "Raid_Captain_3", "Cursed_Doll_3", "Keen_Blunt_Weapon_3", "Adrenaline_3", "Energy_Overflow_1"],
       "options": ["Synergy_Crit_A", "Synergy_Damage_A", "갈망_3"],
       "artifact_set": ["지배_6_3"],

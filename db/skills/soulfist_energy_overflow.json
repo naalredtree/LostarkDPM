@@ -7,6 +7,63 @@
   },
   "skill_preset": [
     {
+      "name": "금강선공_1단계",
+      "default_damage": 0,
+      "default_coefficient": 0,
+      "base_damage_multiplier": 0,
+      "skill_type": "Common",
+      "identity_type": "Common",
+      "cooldown": 999999,
+      "common_delay": 0.48,
+      "type_specific_delay": 0,
+      "jewel_cooldown_level": 0,
+      "jewel_damage_level": 10,
+      "head_attack": false,
+      "back_attack": false,
+      "triggered_actions": ["activate_hyper_1"],
+      "key_strokes" : 1,
+      "energy_cost": 0,
+      "mana_cost": 0
+    },
+    {
+      "name": "금강선공_2단계",
+      "default_damage": 0,
+      "default_coefficient": 0,
+      "base_damage_multiplier": 0,
+      "skill_type": "Common",
+      "identity_type": "Common",
+      "cooldown": 999999,
+      "common_delay": 0.48,
+      "type_specific_delay": 0,
+      "jewel_cooldown_level": 0,
+      "jewel_damage_level": 10,
+      "head_attack": false,
+      "back_attack": false,
+      "triggered_actions": ["activate_hyper_2"],
+      "key_strokes" : 1,
+      "energy_cost": 0,
+      "mana_cost": 0
+    },
+    {
+      "name": "금강선공_3단계",
+      "default_damage": 0,
+      "default_coefficient": 0,
+      "base_damage_multiplier": 0,
+      "skill_type": "Common",
+      "identity_type": "Common",
+      "cooldown": 999999,
+      "common_delay": 0.48,
+      "type_specific_delay": 0,
+      "jewel_cooldown_level": 0,
+      "jewel_damage_level": 10,
+      "head_attack": false,
+      "back_attack": false,
+      "triggered_actions": ["activate_hyper_3"],
+      "key_strokes" : 1,
+      "energy_cost": 0,
+      "mana_cost": 0
+    },
+    {
       "name": "내공 방출",
       "default_damage": 0,
       "default_coefficient": 0,
@@ -60,11 +117,51 @@
       "jewel_damage_level": 0,
       "head_attack": false,
       "back_attack": false,
-      "triggered_actions": ["activate_flash_step_1"],
+      "triggered_actions": ["activate_flash_step","step_cooldown_calc"],
       "key_strokes" : 1,
       "energy_cost": 150,
       "mana_cost": 0,
-      "rune": "속행_전설"
+      "rune": "광분_전설"
+    },
+    {
+      "name": "순보_2타",
+      "default_damage": 267,
+      "default_coefficient": 1.59,
+      "base_damage_multiplier": 1,
+      "skill_type": "Chain",
+      "identity_type": "Common",
+      "cooldown": 8,
+      "common_delay": 0.5,
+      "type_specific_delay": 0,
+      "jewel_cooldown_level": 0,
+      "jewel_damage_level": 0,
+      "head_attack": false,
+      "back_attack": false,
+      "triggered_actions": ["activate_flash_step","step_cooldown_calc"],
+      "key_strokes" : 1,
+      "energy_cost": 300,
+      "mana_cost": 0,
+      "rune": "광분_전설"
+    },
+    {
+      "name": "순보_3타",
+      "default_damage": 267,
+      "default_coefficient": 1.59,
+      "base_damage_multiplier": 1,
+      "skill_type": "Common",
+      "identity_type": "Common",
+      "cooldown": 8,
+      "common_delay": 0.5,
+      "type_specific_delay": 0,
+      "jewel_cooldown_level": 0,
+      "jewel_damage_level": 0,
+      "head_attack": false,
+      "back_attack": false,
+      "triggered_actions": ["activate_flash_step","step_cooldown_calc"],
+      "key_strokes" : 1,
+      "energy_cost": 600,
+      "mana_cost": 0,
+      "rune": "광분_전설"
     },
     {
       "name": "섬열파",
@@ -104,7 +201,7 @@
       "key_strokes" : 1,
       "energy_cost": 300,
       "mana_cost": 0,
-      "rune": "속행_영웅"
+      "rune": "속행_전설"
     },
     {
       "name": "섭물진기_1틱",
@@ -123,7 +220,8 @@
       "triggered_actions": [],
       "key_strokes" : 1,
       "energy_cost": 630,
-      "mana_cost": 0
+      "mana_cost": 0,
+      "rune": "질풍_영웅"
     },    
     {
       "name": "섭물진기_4틱",
@@ -142,7 +240,8 @@
       "triggered_actions": [],
       "key_strokes" : 1,
       "energy_cost": 630,
-      "mana_cost": 0
+      "mana_cost": 0,
+      "rune": "질풍_영웅"
     },
     {
       "name": "섭물진기_11틱",
@@ -161,7 +260,8 @@
       "triggered_actions": [],
       "key_strokes" : 1,
       "energy_cost": 630,
-      "mana_cost": 0
+      "mana_cost": 0,
+      "rune": "질풍_영웅"
     },
     {
       "name": "난화격",
@@ -201,7 +301,7 @@
       "key_strokes" : 1,
       "energy_cost": 340,
       "mana_cost": 0,
-      "rune": "질풍_영웅"
+      "rune": "속행_영웅"
     },
     {
       "name": "여래신장_3틱",
@@ -221,7 +321,7 @@
       "key_strokes" : 1,
       "energy_cost": 310,
       "mana_cost": 0,
-      "rune": "질풍_영웅"
+      "rune": "속행_영웅"
     },
     {
       "name": "여래신장_4틱",
@@ -241,7 +341,7 @@
       "key_strokes" : 1,
       "energy_cost": 310,
       "mana_cost": 0,
-      "rune": "질풍_영웅"
+      "rune": "속행_영웅"
     },
     {
       "name": "천하섬멸옥",
